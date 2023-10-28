@@ -1,0 +1,130 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.nav img {
+  width: auto;
+  height: auto;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+}
+.nav ul a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+
+  transition: var(--transition);
+}
+.nav ul .nav_btn {
+  background-color: rgb(130, 68, 255);
+  padding: 0.2rem 0.8rem;
+  border-radius: 2rem;
+}
+.nav ul a:hover {
+  color: rgb(207, 211, 228);
+}
+
+/* hero section */
+.hero_section {
+  margin-top: 0;
+}
+.hero_container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 3rem;
+  padding: 3rem 0;
+  padding-bottom: 1rem;
+  color: white;
+}
+.bg_grid {
+  position: absolute;
+  width: 100%;
+  top: -20%;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+.left_hero h2 {
+  color: white;
+  font-size: 3.5rem;
+}
+.left_hero h2 span.green {
+  color: rgb(22, 248, 182);
+}
+.left_hero h2 span.pink {
+  color: #f926ae;
+}
+.left_hero p {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.4rem;
+}
+
+.right_hero img {
+  height: 100%;
+  width: 100%;
+}
+
+/* intro */
+.intro_desc {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.intro_stat {
+  display: grid;
+  padding: 2rem 0;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.stat_card {
+  border-radius: 0.5rem;
+  border: 1px solid rgb(31, 34, 60);
+  background-color: rgb(17, 21, 44);
+  padding: 2rem 3rem;
+  color: white;
+}
+.stat_card .count {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.stat_card .name {
+  font-size: 1rem;
+}
+.stat_card:nth-child(1) {
+  box-shadow: 0 -1px 1px var(--card-one-color);
+}
+.stat_card:nth-child(2) {
+  box-shadow: 0 -1px 1px var(--card-two-color);
+}
+.stat_card:nth-child(3) {
+  box-shadow: 0 -1px 1px var(--card-three-color);
+}
+.stat_card:nth-child(4) {
+  box-shadow: 0 -1px 1px var(--card-four-color);
+}
+
+.stat_card:nth-child(1) .count {
+  color: var(--card-one-color);
+}
+
+.stat_card:nth-child(2) .count {
+  color: var(--card-two-color);
+}
+.stat_card:nth-child(3) .count {
+  color: var(--card-three-color);
+}
+.stat_card:nth-child(4) .count {
+  color: var(--card-four-color);
+}
