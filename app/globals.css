@@ -22,7 +22,7 @@
 
 /* general style */
 body {
-  line-height: 1.7;
+  line-height: 1.5;
   overflow-x: hidden;
 }
 .landing_page {
@@ -33,13 +33,16 @@ body {
   max-width: 2560px;
   margin: 0 auto;
 }
+a {
+  color: white;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  line-height: 1.1;
 }
 h1 {
   font-size: 3rem;
@@ -64,16 +67,19 @@ section {
 .section_header span {
   color: #9e7cff;
   font-size: 1.2rem;
+  font-family: var(--font-roboto-mono);
 }
 .section_header h3 {
   font-weight: 600;
   font-size: 1.7rem;
   padding-top: 0.4rem;
+  font-family: var(--font-roboto-mono);
 }
 .desc {
   font-size: 1.2rem;
   font-weight: 500;
   color: #d3d8e8;
+  font-family: var(--font-noto);
 }
 
 /* MIDEA Queries (medium screens) */

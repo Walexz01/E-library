@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import "./_styles/landingPage.css";
 import NavBar from "./_components/_in_resuable/NavBar";
-const inter = Inter({ subsets: ["latin"] });
+import "./_styles/landingPage.css";
+import { inter, noto_Sans, poppins, roboto_mono } from "./fonts";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "eBookVerse",
@@ -17,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} landing_page`}>
+      <body
+        className={`${inter.variable}  ${noto_Sans.variable} ${poppins.variable} ${roboto_mono.variable} landing_page`}
+      >
         <header>
           <NavBar />
         </header>
