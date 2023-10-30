@@ -251,3 +251,96 @@
   font-size: 1.2rem;
   text-align: center;
 }
+
+/* testimonials */
+.test_card {
+  padding: 1rem;
+  border-color: transparent;
+  background-color: #12172a;
+}
+.test_card .divider {
+  background-color: #9e7cff;
+  height: 3px;
+  width: 3rem;
+  margin: 1rem 0;
+}
+.test_card p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+.name_img {
+  display: flex;
+  gap: 0.8rem;
+}
+.name_img .image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem 0;
+  gap: 4rem;
+}
+.price {
+  padding: 0 1.5rem 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.price .shade {
+  z-index: 0;
+}
+.price_name {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.price_name h3 {
+  color: #f926ae;
+  font-size: 2rem;
+  font-family: var(--font-roboto-mono);
+}
+.price_name span {
+  font-family: var(--font-noto);
+}
+.list_btn ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--font-noto);
+}
+.sub_btn {
+  text-align: center;
+}
+.subcribe_btn {
+  background: linear-gradient(to right, #f926ae, #8244ff);
+  padding: 0.6rem 1rem;
+  border-radius: 1.8rem;
+  font-size: 1rem;
+  color: white;
+}
+.sub_btn .desc {
+  font-size: 1rem;
+  margin-top: 0.6rem;
+}
+.tag {
+  text-align: right;
+  margin: 1.5rem 0;
+}
+.tag span {
+  background-color: #262b42;
+  padding: 0.2rem 0.8rem;
+  color: #f926ae;
+  font-family: var(--font-poppins);
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.pricing_container .contact {
+  text-align: center;
+  margin-bottom: 8rem;
+}
