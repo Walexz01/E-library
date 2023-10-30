@@ -1,3 +1,4 @@
+/* ======================= navBar====================== */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -51,6 +52,7 @@
   left: 0;
   bottom: 0;
   height: 100%;
+  z-index: -1;
 }
 .left_hero h2 {
   color: white;
@@ -86,7 +88,6 @@
 .intro_stat {
   display: grid;
   padding: 2rem 0;
-  place-items: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   text-align: center;
@@ -148,7 +149,7 @@
   margin: 3rem 0 4rem 0;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 5rem;
 }
 
 .why_us {
@@ -226,7 +227,8 @@
   font-size: 1rem;
   font-family: var(--font-roboto-mono);
 }
-.view_all_btn .desc a {
+.view_all_btn .desc a,
+.desc a {
   text-decoration: underline;
   text-decoration-color: #f926ae;
   font-weight: 600;
@@ -343,4 +345,325 @@
 .pricing_container .contact {
   text-align: center;
   margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  /* ======================= navBar====================== */
+  .nav {
+    padding: 1rem;
+  }
+  .nav ul {
+    display: none;
+    gap: 1.5rem;
+  }
+  .nav ul a {
+    font-size: 1.1rem;
+  }
+  /* hero section */
+  .left_hero h2 {
+    font-size: 3rem;
+  }
+  .left_hero p {
+    font-size: 1.1rem;
+  }
+
+  /* intro */
+  .intro_desc {
+    width: 80%;
+  }
+  .intro_stat {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+  .stat_card .count {
+    font-size: 1.5rem;
+  }
+  .stat_card .name {
+    font-size: 1rem;
+  }
+  /* ============================== why us======================== */
+  .why_us_list {
+    margin: 3rem 0 4rem 0;
+  }
+
+  .why_left h3 {
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+  }
+  /* ==================== top book ====================== */
+  #top_book_section {
+    margin-top: 10rem;
+  }
+  .view_all_btn .desc a {
+    text-underline-offset: 3px;
+  }
+
+  .books {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  .book .details h4 {
+    font-size: 1.1rem;
+  }
+  /* testimonials */
+  .test_card {
+    padding: 1rem;
+  }
+  /* pricing */
+  .prices {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .price_name h3 {
+    font-size: 1.8rem;
+  }
+  .price_name span {
+    font-size: 1rem;
+  }
+  .list_btn ul {
+    gap: 0.2rem;
+    font-size: 1rem;
+  }
+  .subcribe_btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  /* hero section */
+  .left_hero h2 {
+    font-size: 2.7rem;
+  }
+  .left_hero p {
+    font-size: 1rem;
+  }
+  /* intro */
+  .intro_desc {
+    width: 90%;
+  }
+  .intro_stat {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .stat_card .count {
+    font-size: 1.3rem;
+  }
+  /* ============================== why us======================== */
+  .why_us_list {
+    margin: 3rem 0 4rem 0;
+  }
+
+  .why_left h3 {
+    font-size: 1.2rem;
+  }
+  .why_left .desc {
+    font-size: 1.1rem;
+  }
+  /* ==================== top book ====================== */
+  #top_book_section {
+    margin-top: 8rem;
+  }
+
+  .books {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .book .details h4 {
+    font-size: 1rem;
+  }
+  /* pricing */
+  .price_name h3 {
+    font-size: 1.6rem;
+  }
+  .price_name span {
+    font-size: 0.8rem;
+  }
+  .list_btn ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  /* nav */
+  nav .container {
+    width: 100%;
+  }
+
+  /* hero section */
+  .hero_section {
+    margin-top: 0;
+  }
+  .hero_section .hero_container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  .left_hero h2 {
+    font-size: 2.7rem;
+  }
+  .left_hero p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  /* intro */
+  .intro_section {
+    margin-bottom: 5rem;
+  }
+  .intro_desc {
+    width: 100%;
+  }
+  .intro_stat {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 80%;
+  }
+  .stat_card .count {
+    font-size: 1.4rem;
+  }
+  /* ============================== why us======================== */
+  .why_us_list {
+    margin: 3rem 0 4rem 0;
+    gap: 2rem;
+  }
+  .why_us {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .why_left h3 {
+    margin: 0.5rem 0;
+    font-size: 1.7rem;
+  }
+  .why_us:nth-child(even) .why_left {
+    order: -1;
+  }
+  /* ==================== top book ====================== */
+  #top_book_section {
+    margin-top: 0rem;
+  }
+  .view_all {
+    font-size: 0.9rem;
+  }
+  .view_all_btn .desc {
+    font-size: 0.9rem;
+  }
+  .books {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .book .details h4 {
+    font-size: 1rem;
+  }
+  /* testimonials */
+  .prices {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .price_name h3 {
+    font-size: 1.5rem;
+  }
+  .price_name span {
+    font-size: 1rem;
+  }
+  .sub_btn .desc {
+    font-size: 0.8rem;
+  }
+  .tag span {
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  /* nav */
+  .nav img {
+    width: 170px;
+    height: auto;
+  }
+
+  /* hero section */
+  .hero_section {
+    margin-top: 0;
+  }
+  .left_hero h2 {
+    font-size: 2.5rem;
+  }
+  /* intro */
+  .intro_section {
+    margin-bottom: 5rem;
+  }
+  .intro_stat {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+  .stat_card .count {
+    font-size: 1.3rem;
+  }
+  /* ============================== why us======================== */
+  .why_left h3 {
+    font-size: 1.5rem;
+  }
+  .why_us:nth-child(even) .why_left {
+    order: -1;
+  }
+  /* ==================== top book ====================== */
+  .books {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 4rem;
+  }
+  /* testimonials */
+  .prices {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  /* intro */
+  .intro_section {
+    margin-bottom: 3rem;
+  }
+  /* ==================== top book ====================== */
+  .books {
+    padding: 2rem;
+  }
+  /* testimonials */
+  .prices {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  .pricing_container .contact {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  /* nav */
+  .nav img {
+    width: 150px;
+    height: auto;
+  }
+  /* ==================== top book ====================== */
+  .books {
+    padding: 2rem 1rem;
+  }
+
+  /* hero */
+  .left_hero h2 {
+    font-size: 2rem;
+  }
+  .container.hero_container {
+    padding: 3rem 0.7rem;
+  }
+
+  /* intro */
+  .intro_stat {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  /* prices */
+  .prices {
+    padding: 0.5rem;
+  }
 }

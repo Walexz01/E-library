@@ -16,7 +16,7 @@ export default function Home() {
       <LineGradientCon>
         <WhyUs />
         <TopBooks />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Pricing />
       </LineGradientCon>
     </div>

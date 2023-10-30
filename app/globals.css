@@ -93,6 +93,12 @@ section {
   h2 {
     font-size: 1.6rem;
   }
+  .section_header {
+    padding-bottom: 1rem;
+  }
+  .desc {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -104,6 +110,15 @@ section {
     line-height: 1.3;
   }
   section {
-    margin-top: 7rem;
+    margin-top: 3rem;
+  }
+  .section_header span {
+    font-size: 1.1rem;
+  }
+  .section_header h3 {
+    font-size: 1.4rem;
+  }
+  .desc {
+    font-size: 1rem;
   }
 }
