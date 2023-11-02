@@ -13,16 +13,18 @@ const HomeHero = () => {
         />
         <div className="left_hero">
           <h2>
-            Become the <span className="green">software engineer</span> that
-            companies <span className="pink">love to hire</span>
+            Elevate Your
+            <span className="green"> Reading</span> Experience to
+            <span className="pink"> Unprecedented Heights</span>
           </h2>
           <p>
-            All the <strong> coding courses</strong> you need to excel
-            <strong> in one place.</strong>
+            eBookVerse is your gateway to
+            <strong> a world of digital books </strong>
+            where each page is a portal to a<strong> new adventure.</strong>
           </p>
         </div>
         <div className="right_hero">
-          <img alt="eBookVerse-hero-img" src={"/images/hero.png"} />
+          <img alt="eBookVerse-hero-img" src={"/images/19197861.png"} />
         </div>
       </div>
     </section>

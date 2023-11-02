@@ -7,14 +7,15 @@ const Intro = () => {
       <div className="container intro_container">
         <SectionHeader
           heading="HELLO,"
-          subheading="I'm Mosh Hamedani."
-          desc=" Are you feeling stuck or overwhelmed in your coding journey?
-          Don't worry, I've got your back! Together, we'll work
-          to level up your skills, increase your earning potential, and build a
-          brighter future."
+          subheading="Welcome to eBookVerse."
+          desc="Ready to venture into the future of reading? eBookVerse invites you into a realm of digital books, where each page ignites fresh adventures. Immerse yourself in a world of boundless knowledge and thrilling journeys."
           descClass="intro_desc"
         />
+        <div className="video_con">
+          <video src="" poster="/images/hero.png" controls></video>
+        </div>
         {/* video */}
+
         <div className="intro_stat">
           {stats.map(({ count, name }, index) => (
             <div className="stat_card" key={index}>

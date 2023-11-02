@@ -123,7 +123,14 @@
 .stat_card:nth-child(4) {
   box-shadow: 0 -1px 1px var(--card-four-color);
 }
-
+.video_con {
+  text-align: center;
+}
+.video_con video {
+  margin-top: 1rem;
+  width: 520px;
+  height: 280px;
+}
 /* ====================== line and shade =================== */
 .line {
   margin: 1rem 0;
@@ -624,6 +631,12 @@
   .intro_section {
     margin-bottom: 3rem;
   }
+  .video_con video {
+    margin-top: 1rem;
+    width: 95%;
+    height: 280px;
+  }
+
   /* ==================== top book ====================== */
   .books {
     padding: 2rem;
