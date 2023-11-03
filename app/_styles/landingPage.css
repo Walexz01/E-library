@@ -296,6 +296,10 @@
   padding: 0 1.5rem 2rem 1.5rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .price .shade {
   z-index: 0;
@@ -312,7 +316,7 @@
 .price_name span {
   font-family: var(--font-noto);
 }
-.list_btn ul {
+.list_why ul {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -321,6 +325,15 @@
   font-size: 1rem;
   font-weight: 500;
   font-family: var(--font-noto);
+}
+.list_why ul li {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+.list_why ul svg {
+  font-size: 0.9rem;
 }
 .sub_btn {
   text-align: center;
@@ -339,6 +352,9 @@
 .tag {
   text-align: right;
   margin: 1.5rem 0;
+}
+.not_tag {
+  margin: 4.5rem 0;
 }
 .tag span {
   background-color: #262b42;
@@ -474,7 +490,7 @@
   .price_name span {
     font-size: 1rem;
   }
-  .list_btn ul {
+  .list_why ul {
     gap: 0.2rem;
     font-size: 1rem;
   }
@@ -531,7 +547,7 @@
   .price_name span {
     font-size: 0.8rem;
   }
-  .list_btn ul {
+  .list_why ul {
     font-size: 0.9rem;
   }
 }
