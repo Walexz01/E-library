@@ -12,7 +12,11 @@ const Intro = () => {
           descClass="intro_desc"
         />
         <div className="video_con">
-          <video src="" poster="/images/hero.png" controls></video>
+          <video
+            src="/videos/Quick App Intro.mp4"
+            poster="/images/intro_poster.png"
+            controls
+          ></video>
         </div>
         {/* video */}
 
