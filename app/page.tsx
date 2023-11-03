@@ -1,3 +1,4 @@
+import Footer from "./_components/_in_resuable/Footer";
 import HomeHero from "./_components/_in_resuable/HomeHero";
 import Intro from "./_components/_in_resuable/Intro";
 import Pricing from "./_components/_in_resuable/Pricing";
@@ -19,6 +20,7 @@ export default function Home() {
         {/* <Testimonials /> */}
         <Pricing />
       </LineGradientCon>
+      <Footer />
     </div>
   );
 }
