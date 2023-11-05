@@ -20,7 +20,7 @@ const NavBar = () => {
             </li>
           ))}
           <li className="nav_btn">
-            <Link href={"/auth"}>Get Started</Link>
+            <Link href={"/api/auth/signin"}>Get Started</Link>
           </li>
         </ul>
         <div className="toggler">
