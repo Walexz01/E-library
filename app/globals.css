@@ -33,6 +33,9 @@ body {
   max-width: 2560px;
   margin: 0 auto;
 }
+.dash {
+  background: transparent;
+}
 a {
   color: white;
 }

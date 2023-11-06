@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import NavBar from "./_components/_in_resuable/NavBar";
+import LandingHeader from "./_components/_in_resuable/LandingHeader";
 import "./_styles/landingPage.css";
 import { inter, noto_Sans, poppins, roboto_mono } from "./fonts";
 import "./globals.css";
@@ -17,12 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable}  ${noto_Sans.variable} ${poppins.variable} ${roboto_mono.variable} landing_page`}
+        className={`${inter.variable}  ${noto_Sans.variable} ${poppins.variable} ${roboto_mono.variable}`}
       >
-        <header>
-          <NavBar />
-        </header>
-        <main>{children}</main>
+        <LandingHeader />
+        <main> {children}</main>
       </body>
     </html>
   );
